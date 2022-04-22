@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Test {
+  name: String!
+  breed: String!
+  age: BigNumber!
+}
+
+"""BigNumber custom scalar type"""
+scalar BigNumber
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  test(testCreateInput: TestCreateInput!): Test!
+}
+
+input TestCreateInput {
+  name: String!
+  age: BigNumber!
+  breed: String!
+}
